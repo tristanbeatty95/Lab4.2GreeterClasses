@@ -1,0 +1,16 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GreeterAppTest {
+
+	@Test
+	void testGreet1() {
+			Greeter testGreet1 = new Greeter("Hello");
+			String expected = "Hello, Tristan!";
+			String actual = testGreet1.greet("Tristan");
+			assertEquals(expected, actual);
+		
+	}
+
+}
